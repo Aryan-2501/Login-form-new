@@ -41,7 +41,7 @@ function App() {
         details.email === "" ||
         details.password === ""
       ) {
-        setError("Fill the details with");
+        setError("Fill the details");
       } else {
         console.log("Incorrect Details");
         setError("Incorrect Details");
