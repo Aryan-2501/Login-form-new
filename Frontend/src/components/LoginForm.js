@@ -27,8 +27,6 @@ function LoginForm({ Login, error, SetError }) {
           password,
         });
 
-        console.log(data);
-
         if (data.status === false) {
           sessionStorage.setItem("auth", "false");
           Swal.fire({
@@ -40,7 +38,6 @@ function LoginForm({ Login, error, SetError }) {
           });
         }
         if (data.status === true) {
-          console.log(data.user);
           let allData = data.user;
 
           localStorage.setItem("username", allData.username);

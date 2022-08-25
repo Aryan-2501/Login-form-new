@@ -48,7 +48,6 @@ function Register() {
           showConfirmButton: false,
         });
       }
-      // console.log(values, data);
     }
   }
 
